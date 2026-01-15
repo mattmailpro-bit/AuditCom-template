@@ -13,7 +13,7 @@
 <body>
 
     <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
-    <h1 data-bind-global="count"></h1>
+    <!--<h1 data-bind-global="count"></h1>-->
 
     <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
     <!-- <section id="teamList">
@@ -26,8 +26,10 @@
 
 
     <section id="hero">
-        <h1>Découvrez le premier rapport sur le digital des clubs de foot romands.</h1>
-        <button>TELECHARGER</button>
+        <div>
+            <h1>Découvrez le premier rapport sur le digital des clubs de foot romands.</h1>
+            <a href="#form"><button>TELECHARGER</button></a>
+        </div>
         <img src="image/tuiliere.jpg" alt="Stade de la Tuilière">
     </section>
 
@@ -122,21 +124,22 @@
         <div>
             <p>La majorité des clubs ont une présence digitale... mais très peu l’exploitent réellement</p>
         </div>
-        <div>
+        <div class="column-template">
             <h3>1 club sur 3</h3>
             <p>Utilise des outils de suivi (analytics)</p>
         </div>
         <div>
             <h3>-20%</h3>
-            <p>Proposent une newsletter</p>
+            <p class="margin-left-paragraph">Proposent une newsletter</p>
         </div>
         <div>
             <h3>60%</h3>
-            <p>Fonctionnent avec une strcture bénévole</p>
+            <p class="margin-left-paragraph">Fonctionnent avec une structure bénévole</p>
         </div>
     </section>
 
-    <section id="teamList">
+    <section id="scroll-team-logo">
+        <div id="teamList"></div>
     </section>
 
     <section id="form">
@@ -146,8 +149,10 @@
             <input type="text" name="firstName" placeholder="PRENOM">
             <input type="text" name="lastName" placeholder="NOM">
             <input type="email" name="email" placeholder="EMAIL">
-            <input type="checkbox" name="newsletterAgreement" id="consent">
-            <label for="consent">J’ACCEPTE DE RECEVOIR DES EMAILS PROMOTIONNELS</label>
+            <div>
+                <input type="checkbox" name="newsletterAgreement" id="consent">
+                <label for="consent">J’ACCEPTE DE RECEVOIR DES EMAILS PROMOTIONNELS</label>
+            </div>
             <button type="submit">ACCEDER AU RAPPORT</button>
         </form>
     </section>

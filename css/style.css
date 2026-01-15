@@ -1,5 +1,169 @@
 @import "reset.css";
 
-img {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap');
+
+
+html {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+}
+
+section#hero {
+    height: 100vh;
+    background-color: #0E2931;
+    color: white;
+}
+
+section#hero img {
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+ }
+
+section#hero div{
+    margin-left: 10%;
+    width: 70%;
+    height: 40%;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+section#hero h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+section#hero button{
+    background: #861211;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    border: 0px;
     width: 250px;
+}
+
+section#club-grid{
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+section#club-grid div{
+    height: 150px;
+    background-color: #861211;
+    border: 3px solid;
+    border-color: #0E2931;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+section#stats {
+    background: #0E2931;
+    background: linear-gradient(180deg, rgba(14, 41, 49, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 80px 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+section#stats div {
+    background: #E5E7EB;
+    height: 250px;
+    border: 5px solid #861211;
+}
+
+section#stats div {
+    font-size: 1.5rem;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        font-size: 4rem;
+    }   
+}
+
+.column-template {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowraps;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+
+
+.margin-left-paragraph {
+    margin-left: 40px;  
+
+}
+
+#teamList{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+div#teamList img{
+    width: 100px;
+    margin-inline: 70px;
+    filter: saturate(0);
+}
+
+div#teamList img:hover{
+    transition-duration: 400ms;
+    transition-timing-function: ease-out;
+    transform: scale(1.3);
+    filter: saturate(1);
+}
+
+#scroll-team-logo {
+    overflow: hidden;
+}
+
+section#form {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#form h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
 }
