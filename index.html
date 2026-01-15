@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,149 @@
     <script src="src/main.js" type="module" defer></script>
 
 </head>
+
 <body>
+
     <!-- data-bind-global="count" : Affiche le nombre total de rapports (métadonnées globales) -->
     <h1 data-bind-global="count"></h1>
-    
+
     <!-- id="teamList" : Conteneur où seront ajoutés dynamiquement les éléments de l'équipe. Le nom de cet ID ne doit pas être modifié. -->
-    <section id="teamList">
-    </section>
+    <!-- <section id="teamList">
+    </section> -->
 
     <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
     <div id="messageContainer"></div>
 
-    <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
-    <form id="downloadForm">
-    </form>
+
+
+
+    <section id="hero">
+        <h1>Découvrez le premier rapport sur le digital des clubs de foot romands.</h1>
+        <button>TELECHARGER</button>
+        <img src="image/tuiliere.jpg" alt="Stade de la Tuilière">
+    </section>
+
+    <section id="club-grid">
+        <div>
+            <p>CS Chênois</p>
+        </div>
+        <div>
+            <p>CS Romontois</p>
+        </div>
+        <div>
+            <p>Etoile Carouge</p>
+        </div>
+        <div>
+            <p>FC Ajoie-Monterri</p>
+        </div>
+        <div>
+            <p>FC Amical St-Prex</p>
+        </div>
+        <div>
+            <p>FC Bassecourt</p>
+        </div>
+        <div>
+            <p>FC Bulle</p>
+        </div>
+        <div>
+            <p>FC Dardania Lausanne</p>
+        </div>
+        <div>
+            <p>FC Echallens</p>
+        </div>
+        <div>
+            <p>FC Grand-Saconnex</p>
+        </div>
+        <div>
+            <p>FC Kosova</p>
+        </div>
+        <div>
+            <p>FC La Chaux-de-Fonds</p>
+        </div>
+        <div>
+            <p>FC La Sarraz-Eclépens</p>
+        </div>
+        <div>
+            <p>FC Martigny-Sports</p>
+        </div>
+        <div>
+            <p>FC Monthey</p>
+        </div>
+        <div>
+            <p>FC Saint-Blaise</p>
+        </div>
+        <div>
+            <p>FC Sion</p>
+        </div>
+        <div>
+            <p>FC Stade Lausanne Ouchy</p>
+        </div>
+        <div>
+            <p>FC Stade Nyonnais</p>
+        </div>
+        <div>
+            <p>FC Stade-Payerne</p>
+        </div>
+        <div>
+            <p>FC Biel-Bienne 1896</p>
+        </div>
+        <div>
+            <p>Lancy FC</p>
+        </div>
+        <div>
+            <p>Meyrin FC</p>
+        </div>
+        <div>
+            <p>Neuchâtel Xamax FCS</p>
+        </div>
+        <div>
+            <p>Sports-Réunis Delémont</p>
+        </div>
+        <div>
+            <p>US Terre-Sainte</p>
+        </div>
+        <div>
+            <p>Vevey-Sports</p>
+        </div>
+        <div>
+            <p>Yverdon Sport FC</p>
+        </div>
+    </section>
+
+    <section id="stats">
+        <div>
+            <p>La majorité des clubs ont une présence digitale... mais très peu l’exploitent réellement</p>
+        </div>
+        <div>
+            <h3>1 club sur 3</h3>
+            <p>Utilise des outils de suivi (analytics)</p>
+        </div>
+        <div>
+            <h3>-20%</h3>
+            <p>Proposent une newsletter</p>
+        </div>
+        <div>
+            <h3>60%</h3>
+            <p>Fonctionnent avec une strcture bénévole</p>
+        </div>
+    </section>
+
+    <section id="teamList">
+    </section>
+
+    <section id="form">
+        <h2>ACCEDER AU RAPPORT</h2>
+        <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
+        <form id="downloadForm">
+            <input type="text" name="firstName" placeholder="PRENOM">
+            <input type="text" name="lastName" placeholder="NOM">
+            <input type="email" name="email" placeholder="EMAIL">
+            <input type="checkbox" name="newsletterAgreement" id="consent">
+            <label for="consent">J’ACCEPTE DE RECEVOIR DES EMAILS PROMOTIONNELS</label>
+            <button type="submit">ACCEDER AU RAPPORT</button>
+        </form>
+    </section>
 
 </body>
+
 </html>
