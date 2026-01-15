@@ -19,8 +19,7 @@
     <!-- <section id="teamList">
     </section> -->
 
-    <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
-    <div id="messageContainer"></div>
+    
 
 
 
@@ -28,7 +27,7 @@
     <section id="hero">
         <div>
             <h1>Découvrez le premier rapport sur le digital des clubs de foot romands.</h1>
-            <a href="#form"><button>TELECHARGER</button></a>
+            <a href="#form"></a><button>TELECHARGER</button></a>
         </div>
         <img src="image/tuiliere.jpg" alt="Stade de la Tuilière">
     </section>
@@ -143,18 +142,22 @@
     </section>
 
     <section id="form">
+        <div>
         <h2>ACCEDER AU RAPPORT</h2>
         <!-- id="downloadForm" : Formulaire pour télécharger le PDF. Le nom de cet ID ne doit pas être modifié. -->
         <form id="downloadForm">
             <input type="text" name="firstName" placeholder="PRENOM">
             <input type="text" name="lastName" placeholder="NOM">
             <input type="email" name="email" placeholder="EMAIL">
-            <div>
+            <div class="checkbox-row">
                 <input type="checkbox" name="newsletterAgreement" id="consent">
                 <label for="consent">J’ACCEPTE DE RECEVOIR DES EMAILS PROMOTIONNELS</label>
             </div>
             <button type="submit">ACCEDER AU RAPPORT</button>
         </form>
+        </div>
+        <!-- id="messageContainer" : Conteneur pour afficher les messages de succès ou d'erreur. Le nom de cet ID ne doit pas être modifié. -->
+        <div id="messageContainer"></div>
     </section>
 
 </body>
