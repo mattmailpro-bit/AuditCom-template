@@ -22,13 +22,14 @@ section#hero img {
     bottom: 0px;
 }
 
-section#hero div {
+div#title {
+    padding-top: 3rem;
     margin-left: 10%;
     width: 70%;
     height: 40%;
     display: flex;
+    flex-direction: column;
     align-content: space-around;
-    flex-wrap: wrap;
 }
 
 section#hero h1 {
@@ -44,12 +45,31 @@ section#hero button {
     font-weight: 600;
     border: 0px;
     transition: all 0.3s ease;
+    margin-top: 3rem;
 }
 
 #hero button:hover {
     background: #ffffff;
     color: #861211;
     transform: translateY(-2px);
+}
+
+#team-analyse {
+    background-color: #0E2931;
+    padding-left: 10%;
+    padding-block: 5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: baseline;
+
+    h3 {
+        font-size: 3rem;
+        margin-right: 1rem;
+    }
+
+    p {
+        font-size: 3rem;
+    }
 }
 
 
@@ -91,6 +111,10 @@ section#stats {
 }
 
 div.column-template h3 {
+    font-size: 3rem !important;
+}
+
+div.newsletter h3 {
     font-size: 3rem !important;
 }
 
@@ -271,6 +295,23 @@ section#form>div {
         font-size: 2rem;
         font-weight: 500;
     }
+
+    section#hero div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team-analyse {
+
+    h3 {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
 
     section#club-grid {
         display: grid;
